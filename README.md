@@ -8,3 +8,6 @@ Statické HTML (bez buildu). Otvor `index.html` – rozcestník na 3 návrhy:
 
 Zdroj obsahu: https://conturemakeup.sk/ (len pobočka Bratislava; Žilina zatiaľ vynechaná).
 `_src/` = stiahnuté originálne obrázky z pôvodného webu (git ich ignoruje).
+
+Ilustrácie techník (obočie, očné linky, pery) generuje `assets/art.js` priamo v SVG, bez fotiek.
+Lokálny náhľad: `node _dev/serve.js` (priečinok `_dev/` je v .gitignore).
