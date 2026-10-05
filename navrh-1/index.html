@@ -26,7 +26,11 @@ nav a:hover{color:var(--gold)}
 .btn{display:inline-block;border:1px solid var(--ink);padding:16px 38px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;transition:.3s}
 .btn:hover{background:var(--ink);color:var(--bg)}
 .hero .art{height:78vh;border:1px solid var(--line);position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,#fff8ef,var(--panel))}
-.hero .art svg{width:78%;height:auto}
+.hero .art{flex-direction:column;gap:26px;border-radius:300px 300px 0 0}
+.mono{width:min(240px,50%);aspect-ratio:1;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;position:relative}
+.mono::before{content:"";position:absolute;inset:9px;border:1px solid var(--line);border-radius:50%}
+.mono span{font:italic 300 120px/1 "Cormorant Garamond",serif;color:var(--gold)}
+.est{font:italic 300 28px "Cormorant Garamond",serif}
 .hero .art small{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
 section{padding:130px 5vw}
 .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:block}
@@ -75,15 +79,8 @@ footer{padding:40px 5vw;border-top:1px solid var(--line);display:flex;justify-co
     <a class="btn" href="tel:+421903687696">Objednať sa · 0903 687 696</a>
   </div>
   <div class="art">
-    <svg viewBox="0 0 300 200" fill="none" stroke="#1c1917" stroke-width="1" aria-hidden="true">
-      <path d="M20 70 Q70 30 130 56" stroke-width="3" stroke-linecap="round"/>
-      <path d="M170 56 Q230 30 280 70" stroke-width="3" stroke-linecap="round"/>
-      <path d="M30 118 Q85 88 135 118 Q85 138 30 118Z"/><circle cx="84" cy="116" r="9"/>
-      <path d="M165 118 Q215 88 270 118 Q215 138 165 118Z"/><circle cx="216" cy="116" r="9"/>
-      <path d="M32 119 Q85 86 138 117" stroke="#a8825a" stroke-width="2.5"/>
-      <path d="M262 119 Q215 86 162 117" stroke="#a8825a" stroke-width="2.5"/>
-      <path d="M105 170 Q125 158 150 164 Q175 158 195 170 Q150 192 105 170Z" fill="#a8825a" fill-opacity=".25" stroke="#a8825a"/>
-    </svg>
+    <div class="mono"><span>C</span></div>
+    <div class="est">Bratislava · Palisády</div>
     <small>Long-Time-Liner® Conture® Make-up</small>
   </div>
 </div>
