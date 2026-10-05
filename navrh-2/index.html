@@ -4,397 +4,340 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Conture Make-Up Bratislava — permanentný make-up</title>
-<meta name="description" content="Permanentný make-up Bratislava – obočie, očné linky, pery. Vyberte si techniku, spočítajte cenu a objednajte sa. Bezplatné dopigmentovanie do 3 mesiacov.">
+<meta name="description" content="Permanentný make-up Bratislava – obočie, očné linky, pery. Spočítajte si cenu a objednajte sa. 26 rokov praxe, bezplatné dopigmentovanie do 3 mesiacov.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--teal:#0f8f8a;--teal-d:#0a6663;--teal-dd:#064643;--mint:#e4f4f2;--mint2:#cfeae6;--sand:#faf7f3;--ink:#12302f;--mute:#5b7473;--coral:#ff8a7a;--coral-d:#f06f5e;--r:26px;--sh:0 14px 40px rgba(15,143,138,.10)}
+:root{--teal:#0f8f8a;--teal-d:#0a6663;--teal-dd:#064643;--mint:#e4f4f2;--mint2:#cfeae6;--sand:#faf7f3;--ink:#12302f;--mute:#566f6e;--coral:#ff8a7a;--coral-d:#f06f5e;--r:26px;--sh:0 14px 40px rgba(15,143,138,.10)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-padding-top:90px}
 body{font:400 17px/1.65 Manrope,system-ui,sans-serif;color:var(--ink);background:var(--sand);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:90px 0}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.num{width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px}
+.sec-head span{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d)}
 h2{font-size:clamp(32px,4.2vw,52px);line-height:1.08;font-weight:800;letter-spacing:-.03em}
 h2 span{color:var(--teal)}
-.tag{display:inline-flex;align-items:center;gap:8px;background:var(--mint);color:var(--teal-d);font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;margin-bottom:20px}
-.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
-.head{max-width:640px;margin-bottom:46px}
+.head{max-width:660px;margin-bottom:44px}
 .head p{color:var(--mute);margin-top:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--teal);color:#fff;font-weight:700;padding:16px 30px;border-radius:999px;transition:.25s;font-size:15px;border:0;cursor:pointer;font-family:inherit}
-.btn:hover{background:var(--teal-d);transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,143,138,.3)}
-.btn.coral{background:var(--coral)}.btn.coral:hover{background:var(--coral-d);box-shadow:0 10px 24px rgba(255,138,122,.4)}
-.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid #cfe3e0}.btn.ghost:hover{background:var(--mint);box-shadow:none}
-.rev{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
-.rev.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--teal);color:#fff;font-weight:700;padding:16px 30px;border-radius:999px;font-size:15px;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--teal-d)}
+.btn.coral{background:var(--coral)}.btn.coral:hover{background:var(--coral-d)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid #cfe3e0}.btn.ghost:hover{background:var(--mint)}
+.bgm{background:var(--mint)}.bgw{background:#fff}
 
-header{position:sticky;top:0;z-index:40;background:rgba(250,247,243,.9);backdrop-filter:blur(12px);border-bottom:1px solid #e3eeec}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+header{position:sticky;top:0;z-index:40;background:rgba(250,247,243,.97);border-bottom:1px solid #e3eeec}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
 header img{height:38px}
-nav{display:flex;gap:26px;font-weight:600;font-size:15px}
-nav a{padding:6px 0;border-bottom:2px solid transparent}nav a:hover{color:var(--teal);border-color:var(--teal)}
+nav{display:flex;gap:22px;font-weight:600;font-size:14.5px}
+nav a:hover{color:var(--teal);text-decoration:underline;text-underline-offset:6px}
 .hbtn{padding:12px 22px}
 .burger{display:none;border:0;background:var(--mint);width:44px;height:44px;border-radius:50%;cursor:pointer;position:relative}
-.burger i{position:absolute;left:13px;right:13px;height:2px;background:var(--teal-d);border-radius:2px;transition:.3s}
+.burger i{position:absolute;left:13px;right:13px;height:2px;background:var(--teal-d);border-radius:2px}
 .burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:26px}
 .menu-open .burger i:nth-child(1){top:21px;transform:rotate(45deg)}.menu-open .burger i:nth-child(2){top:21px;transform:rotate(-45deg)}
 
-/* hero */
-.hero{padding:64px 0 50px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}
-h1{font-size:clamp(42px,5.8vw,76px);line-height:1.02;font-weight:800;letter-spacing:-.035em}
-h1 span{color:var(--teal);position:relative;white-space:nowrap}
-h1 span::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:12px;background:var(--mint2);z-index:-1;border-radius:6px}
-.hero p.lead{font-size:19px;color:var(--mute);margin:24px 0 34px;max-width:520px}
+/* 01 hero */
+.hero{padding:60px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--mint);color:var(--teal-d);font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;margin-bottom:20px}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
+h1{font-size:clamp(42px,5.6vw,74px);line-height:1.03;font-weight:800;letter-spacing:-.035em}
+h1 span{color:var(--teal)}
+.hero p.lead{font-size:19px;color:var(--mute);margin:24px 0 32px;max-width:520px}
 .cta{display:flex;gap:14px;flex-wrap:wrap}
-.trust{display:flex;gap:30px;margin-top:42px;flex-wrap:wrap}
-.trust div b{display:block;font-size:30px;font-weight:800;color:var(--teal);line-height:1.1}
-.trust div span{font-size:13px;color:var(--mute)}
-.hcard{position:relative}
-.hbig{background:linear-gradient(155deg,var(--teal),#34bbb2);border-radius:44px;padding:30px;color:#fff;position:relative;overflow:hidden;min-height:470px;display:flex;flex-direction:column;justify-content:space-between}
-.hbig::before,.hbig::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.1)}
-.hbig::before{width:340px;height:340px;top:-110px;right:-100px}
-.hbig::after{width:200px;height:200px;bottom:-60px;left:-50px;background:rgba(255,138,122,.28)}
-.hbig .art{background:rgba(255,255,255,.95);border-radius:30px;padding:26px 18px 18px;position:relative;z-index:1}
-.hbig .art svg{width:100%}
-.hbig .art small{display:block;text-align:center;color:var(--mute);font-size:12px;font-weight:700;margin-top:4px;letter-spacing:.02em}
-.hbig .quote{position:relative;z-index:1;font-size:19px;font-weight:600;line-height:1.35;margin-top:24px}
-.chip{position:absolute;background:#fff;border-radius:18px;padding:12px 18px;box-shadow:var(--sh);font-weight:700;font-size:14px;display:flex;align-items:center;gap:10px;z-index:2;animation:fl 5s ease-in-out infinite}
-.chip i{width:34px;height:34px;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-style:normal}
-.chip.c1{left:-26px;bottom:110px}
-.chip.c2{right:-14px;top:36px;animation-delay:-2.4s}
-@keyframes fl{50%{transform:translateY(-8px)}}
+.trust{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap}
+.trust b{display:block;font-size:30px;font-weight:800;color:var(--teal);line-height:1.1}
+.trust span{font-size:13px;color:var(--mute)}
+.collage{position:relative;padding:0 0 60px 60px}
+.collage .big{border-radius:40px;overflow:hidden;aspect-ratio:1/1;background:var(--mint);box-shadow:var(--sh)}
+.collage .big img,.shot img{width:100%;height:100%;object-fit:cover}
+.collage .small{position:absolute;left:0;bottom:0;width:44%;aspect-ratio:4/5;border-radius:28px;overflow:hidden;border:6px solid var(--sand);box-shadow:var(--sh)}
+.collage .badge{position:absolute;right:-8px;top:26px;background:#fff;border-radius:18px;padding:12px 18px;box-shadow:var(--sh);font-weight:700;font-size:14px}
+.strip{background:#fff;border-block:1px solid #e3eeec;padding:20px 0}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px 26px;flex-wrap:wrap;font-weight:700;font-size:14.5px;color:var(--teal-d)}
 
-.strip{background:#fff;border-block:1px solid #e3eeec;padding:22px 0}
-.strip .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-weight:700;font-size:14.5px;color:var(--teal-d)}
-.strip span{display:flex;align-items:center;gap:10px}
-.strip svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 02 about */
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.about .shot{border-radius:36px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--sh);background:var(--mint)}
+.about p{color:var(--mute);margin-top:18px;max-width:560px}
+.kp{display:flex;gap:34px;margin-top:30px;flex-wrap:wrap}
+.kp b{display:block;font-size:38px;font-weight:800;color:var(--teal);line-height:1.1}
+.kp span{font-size:13px;color:var(--mute)}
 
-section{padding:96px 0}
+/* 03 services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);display:flex;flex-direction:column}
+.card .shot{aspect-ratio:4/3;background:var(--mint)}
+.card .body{padding:28px 28px 30px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:26px;font-weight:800;letter-spacing:-.02em}
+.card p{color:var(--mute);font-size:15.5px;margin:8px 0 18px;flex:1}
+.pl{list-style:none;border-top:1px solid #e3eeec}
+.pl li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #e3eeec;font-weight:600;font-size:15.5px}
+.pl li small{display:block;font-weight:500;color:var(--mute);font-size:12.5px}
+.pl b{color:var(--teal-d);font-weight:800;white-space:nowrap}
 
-/* techniques explorer */
-.explorer{background:#fff;border-radius:40px;padding:14px;box-shadow:var(--sh)}
-.tabs{display:flex;gap:8px;padding:8px;background:var(--mint);border-radius:999px;width:max-content;max-width:100%;margin:10px auto 0;overflow:auto}
-.tabs button{border:0;background:transparent;padding:13px 28px;border-radius:999px;font:700 15px Manrope,sans-serif;color:var(--teal-d);cursor:pointer;transition:.25s;white-space:nowrap}
-.tabs button.on{background:var(--teal);color:#fff;box-shadow:0 6px 16px rgba(15,143,138,.3)}
-.panel{display:none;grid-template-columns:1fr 1fr;gap:40px;padding:34px 34px 40px;align-items:center}
-.panel.on{display:grid;animation:pin .5s ease}
-@keyframes pin{from{opacity:0;transform:translateY(10px)}}
-.opts{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
-.opts button{border:1.5px solid #d3e6e3;background:#fff;padding:10px 18px;border-radius:999px;font:600 14px Manrope,sans-serif;cursor:pointer;color:var(--ink);transition:.2s}
-.opts button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.panel h3{font-size:34px;font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-bottom:12px}
-.panel p{color:var(--mute);margin-bottom:20px}
-.panel ul{list-style:none;margin-bottom:26px;display:grid;gap:10px}
-.panel li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px}
-.panel li::before{content:"";flex:none;margin-top:6px;width:18px;height:18px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f8f8a' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/11px no-repeat}
-.price-tag{display:inline-flex;align-items:baseline;gap:8px;background:var(--mint);padding:10px 20px;border-radius:16px;margin-right:12px}
-.price-tag b{font-size:30px;font-weight:800;color:var(--teal-d)}
-.price-tag small{color:var(--mute);font-weight:600}
-.stage{background:linear-gradient(160deg,var(--mint),#f3fbfa);border-radius:30px;aspect-ratio:1/.92;display:grid;place-items:center;position:relative;overflow:hidden}
-.stage svg{width:86%;display:none}
-.stage svg.on{display:block}
-.stage .lbl{position:absolute;left:18px;bottom:16px;background:#fff;border-radius:999px;padding:7px 16px;font-weight:700;font-size:13px;color:var(--teal-d);box-shadow:0 4px 12px rgba(0,0,0,.06)}
-.lipst svg{width:56%}
+/* 04 gallery */
+.gal{columns:4;column-gap:16px}
+.gal figure{break-inside:avoid;margin-bottom:16px;border-radius:22px;overflow:hidden;background:var(--mint);position:relative}
+.gal img{width:100%;height:auto}
+.gal figcaption{position:absolute;left:12px;bottom:12px;background:#fff;border-radius:999px;padding:5px 14px;font-weight:700;font-size:12.5px;color:var(--teal-d)}
+.galcta{margin-top:30px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.galcta span{color:var(--mute)}
 
-/* calculator */
-.calc{background:var(--mint)}
+/* 05 steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:#fff;border-radius:var(--r);padding:30px 26px;box-shadow:var(--sh)}
+.step em{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;font:800 20px Manrope;font-style:normal;margin-bottom:16px}
+.step h4{font-size:19px;font-weight:800;margin-bottom:6px}
+.step p{font-size:15px;color:var(--mute)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.cmp>div{border-radius:30px;padding:36px}
+.cmp .a{background:#fff;border:1.5px solid #e3eeec}.cmp .b{background:var(--teal);color:#fff}
+.cmp h3{font-size:22px;font-weight:800}.cmp .a h3{color:var(--mute)}
+.cmp .big{font-size:50px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:10px 0 18px}
+.cmp ul{list-style:none;display:grid;gap:10px;font-weight:600}
+.cmp li{display:flex;gap:10px}.cmp .a li::before{content:"–"}.cmp .b li::before{content:"✓";font-weight:800}
+
+/* 06 device */
+.dev{background:#fff;border-radius:40px;padding:46px;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;box-shadow:var(--sh)}
+.dev .ph{background:var(--mint);border-radius:30px;padding:26px;display:grid;place-items:center}
+.dev img{border-radius:18px;width:100%;max-width:330px}
+.dev p{color:var(--mute);margin:14px 0 24px}
+
+/* 07 price + calc */
 .calc .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
 .items{display:grid;gap:12px}
-.it{display:flex;align-items:center;gap:16px;background:#fff;border:2px solid transparent;border-radius:20px;padding:18px 22px;cursor:pointer;transition:.2s;user-select:none}
+.it{display:flex;align-items:center;gap:16px;background:#fff;border:2px solid transparent;border-radius:20px;padding:16px 22px;cursor:pointer;user-select:none}
 .it:hover{border-color:var(--mint2)}
-.it.on{border-color:var(--teal);box-shadow:0 8px 22px rgba(15,143,138,.14)}
+.it.on{border-color:var(--teal)}
 .it input{position:absolute;opacity:0;pointer-events:none}
-.box{flex:none;width:28px;height:28px;border-radius:9px;border:2px solid #b6d4d0;display:grid;place-items:center;transition:.2s}
+.box{flex:none;width:28px;height:28px;border-radius:9px;border:2px solid #b6d4d0;display:grid;place-items:center;color:#fff;font-weight:800;font-size:16px}
 .it.on .box{background:var(--teal);border-color:var(--teal)}
-.box svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:.2s}
-.it.on .box svg{opacity:1}
 .it .n{flex:1;font-weight:700}
 .it .n small{display:block;font-weight:500;color:var(--mute);font-size:13.5px}
 .it .p{font-weight:800;font-size:20px;color:var(--teal-d)}
 .grp{font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d);margin:14px 4px 0}
 .grp:first-child{margin-top:0}
 .sum{background:var(--teal-dd);color:#fff;border-radius:34px;padding:36px;position:sticky;top:100px}
-.sum h3{font-size:20px;font-weight:700;opacity:.85;margin-bottom:6px}
+.sum h3{font-size:20px;font-weight:700;opacity:.85}
 .sum .tot{font-size:68px;font-weight:800;letter-spacing:-.04em;line-height:1;margin:6px 0 4px}
-.sum .tot small{font-size:28px;font-weight:700}
-.sum ul{list-style:none;margin:18px 0 22px;display:grid;gap:8px;min-height:30px;font-size:15px;color:#bfe6e2}
-.sum ul li{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(255,255,255,.2);padding-bottom:8px}
+.sum .tot small{font-size:28px}
+.sum ul{list-style:none;margin:18px 0 22px;display:grid;gap:8px;font-size:15px;color:#bfe6e2}
+.sum ul li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed rgba(255,255,255,.2);padding-bottom:8px}
 .sum ul li.empty{border:0;font-style:italic;color:#8fc4bf}
 .sum .btn{width:100%}
 .sum p{font-size:13px;color:#8fc4bf;margin-top:14px}
 
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.step{background:#fff;border-radius:var(--r);padding:30px 26px;position:relative;box-shadow:var(--sh)}
-.step .ic{width:56px;height:56px;border-radius:18px;background:var(--mint);display:grid;place-items:center;margin-bottom:18px}
-.step .ic svg{width:28px;height:28px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.step em{position:absolute;top:22px;right:24px;font:800 40px Manrope;color:var(--mint2);font-style:normal}
-.step h4{font-size:19px;font-weight:800;margin-bottom:6px}
-.step p{font-size:15px;color:var(--mute)}
-
-/* compare */
-.cmp{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.cmp>div{border-radius:30px;padding:38px}
-.cmp .a{background:#fff;border:1.5px solid #e3eeec}
-.cmp .b{background:var(--teal);color:#fff}
-.cmp h3{font-size:24px;font-weight:800;margin-bottom:6px}
-.cmp .a h3{color:var(--mute)}
-.cmp .big{font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:10px 0 22px}
-.cmp ul{list-style:none;display:grid;gap:12px;font-weight:600}
-.cmp li{display:flex;gap:10px}
-.cmp .a li::before{content:"–";color:var(--mute)}
-.cmp .b li::before{content:"✓";font-weight:800}
-
-/* device */
-.dev{background:#fff;border-radius:40px;padding:50px;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;box-shadow:var(--sh)}
-.dev .ph{background:var(--mint);border-radius:30px;padding:26px;display:grid;place-items:center}
-.dev img{border-radius:18px;width:100%;max-width:330px}
-.dev p{color:var(--mute);margin:14px 0 24px}
-.kpis{display:flex;gap:30px;flex-wrap:wrap}
-.kpis b{display:block;font-size:34px;font-weight:800;color:var(--teal)}
-.kpis span{font-size:13px;color:var(--mute)}
-
-/* guarantee */
-.guar{background:var(--teal);color:#fff;border-radius:44px;padding:64px;display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden}
-.guar::after{content:"";position:absolute;right:-80px;top:-100px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.1)}
-.guar .big3{width:130px;height:130px;border-radius:50%;background:#fff;color:var(--teal-d);display:grid;place-items:center;text-align:center;font-weight:800;line-height:1;font-size:52px;position:relative;z-index:1}
+/* 08 guarantee */
+.guar{background:var(--teal);color:#fff;border-radius:44px;padding:60px;display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center}
+.guar .big3{width:130px;height:130px;border-radius:50%;background:#fff;color:var(--teal-d);display:grid;place-items:center;text-align:center;font-weight:800;line-height:1;font-size:52px}
 .guar .big3 small{display:block;font-size:13px;font-weight:700;margin-top:4px}
 .guar h2{color:#fff}.guar p{color:#d4f1ee;margin-top:12px;max-width:560px}
-.guar .btn{background:#fff;color:var(--teal-d);position:relative;z-index:1}
+.guar .btn{background:#fff;color:var(--teal-d)}
 
-/* faq */
+/* 09 school */
+.acad{background:var(--ink);color:#fff;border-radius:34px;padding:46px 50px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.acad h3{font-size:30px;font-weight:800;margin-bottom:6px}
+.acad p{color:#a6c4c2;max-width:600px}
+
+/* 10 faq */
 .faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
 details{background:#fff;border-radius:20px;padding:22px 28px;margin-bottom:12px;box-shadow:0 4px 14px rgba(15,143,138,.05)}
 summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:17px}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-size:20px;line-height:1;transition:.3s}
-details[open] summary::after{transform:rotate(45deg);background:var(--teal);color:#fff}
+summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-size:20px;line-height:1}
+details[open] summary::after{content:"–";background:var(--teal);color:#fff}
 details p{color:var(--mute);margin-top:12px}
 
-/* academy */
-.acad{background:var(--ink);color:#fff;border-radius:34px;padding:44px 50px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
-.acad h3{font-size:28px;font-weight:800;margin-bottom:6px}
-.acad p{color:#a6c4c2;max-width:560px}
-
-/* contact */
+/* 11 contact */
 .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card{background:#fff;border-radius:30px;padding:40px;box-shadow:var(--sh)}
-.card h3{font-size:24px;font-weight:800;margin-bottom:22px}
-.row{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}
-.row .ic{flex:none;width:46px;height:46px;border-radius:15px;background:var(--mint);display:grid;place-items:center}
-.row .ic svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.row small{display:block;color:var(--mute);font-size:13px;font-weight:600}
-.row b,.row a{font-size:19px;font-weight:700}
+.cbox{background:#fff;border-radius:30px;padding:38px;box-shadow:var(--sh)}
+.cbox h3{font-size:24px;font-weight:800;margin-bottom:20px}
+.row{margin-bottom:18px}
+.row small{display:block;color:var(--mute);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.row b,.row a{font-size:20px;font-weight:700}
 .row a:hover{color:var(--teal)}
 .mapc{padding:10px;min-height:380px}
 .mapc iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:22px}
-footer{padding:40px 0 100px;text-align:center;color:var(--mute);font-size:14px}
+footer{padding:36px 0 100px;text-align:center;color:var(--mute);font-size:14px}
 .sticky{display:none}
 
+@media(max-width:1060px){nav{gap:14px;font-size:13.5px}}
 @media(max-width:980px){
  nav{display:none}.burger{display:block}.hbtn{display:none}
- .menu-open nav{display:flex;position:fixed;top:76px;left:0;right:0;bottom:0;background:var(--sand);flex-direction:column;align-items:center;justify-content:center;gap:30px;font-size:20px}
- .hero .wrap,.panel,.calc .grid,.dev,.faq .wrap,.contact .grid,.cmp{grid-template-columns:1fr}
- .hero{padding-top:34px}.chip.c1{left:8px;bottom:90px}.chip.c2{right:8px}
+ .menu-open nav{display:flex;position:fixed;top:76px;left:0;right:0;bottom:0;background:var(--sand);flex-direction:column;align-items:center;justify-content:center;gap:28px;font-size:20px}
+ .hero .wrap,.about .wrap,.calc .grid,.dev,.faq .wrap,.contact .grid,.cmp,.svc{grid-template-columns:1fr}
+ .hero{padding-top:34px}.collage{padding-left:30px}
  .steps{grid-template-columns:1fr 1fr}.guar{grid-template-columns:1fr;padding:40px 28px;text-align:center;justify-items:center}
- .sum{position:static}.dev{padding:26px}.panel{padding:24px 14px 30px}section{padding:64px 0}.strip .wrap{justify-content:center}
+ .sum{position:static}.dev{padding:26px}section{padding:60px 0}.gal{columns:2}
  .sticky{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:50;box-shadow:0 12px 30px rgba(0,0,0,.25)}
 }
-@media(max-width:560px){.steps{grid-template-columns:1fr}.tabs button{padding:12px 18px}.acad{padding:32px 24px}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}.acad{padding:32px 24px}.sec-head span{font-size:12px}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
-  <a href="#"><img src="../assets/logo.png" alt="Long-Time-Liner Conture Make-up" width="190" height="38"></a>
-  <nav id="nav"><a href="#techniky">Techniky</a><a href="#kalkulacka">Cena</a><a href="#postup">Postup</a><a href="#otazky">Otázky</a><a href="#kontakt">Kontakt</a></nav>
+  <a href="#uvod"><img src="../assets/logo.png" alt="Long-Time-Liner Conture Make-up" width="190" height="38"></a>
+  <nav id="nav"><a href="#o-nas">O nás</a><a href="#sluzby">Služby</a><a href="#ukazky">Ukážky</a><a href="#postup">Postup</a><a href="#cennik">Cenník</a><a href="#otazky">Otázky</a><a href="#kontakt">Kontakt</a></nav>
   <a class="btn hbtn" href="tel:+421903687696">0903 687 696</a>
   <button class="burger" id="bg" aria-label="Menu"><i></i><i></i></button>
 </div></header>
 
 <main>
-<section class="hero"><div class="wrap">
+<section class="hero" id="uvod"><div class="wrap">
   <div>
     <span class="tag">Bratislava · Palisády</span>
     <h1>Obočie, linky a pery, ktoré <span>vždy sedia.</span></h1>
     <p class="lead">Permanentný make-up metódou Conture®. Tvar nakreslíme spolu, pigmentujeme jemne a presne — a ak bude výsledok príliš nenápadný, dopigmentujeme ho zadarmo.</p>
-    <div class="cta"><a class="btn" href="tel:+421903687696">Objednať sa</a><a class="btn ghost" href="#kalkulacka">Spočítať cenu</a></div>
-    <div class="trust"><div><b>23 rokov</b><span>praxe elite linergistky</span></div><div><b>70 / s</b><span>vpichov, nitkovo jemne</span></div><div><b>3 mesiace</b><span>bezplatné dopigmentovanie</span></div></div>
+    <div class="cta"><a class="btn" href="tel:+421903687696">Objednať sa</a><a class="btn ghost" href="#cennik">Spočítať cenu</a></div>
+    <div class="trust"><div><b>26 rokov</b><span>praxe v permanentnom make-upe</span></div><div><b>3 mesiace</b><span>bezplatné dopigmentovanie</span></div></div>
   </div>
-  <div class="hcard">
-    <div class="hbig">
-      <div class="art"><svg data-art="brow-hair" data-ink="#3a2a21" data-seed="12"></svg><small>Čiarkované obočie · ilustrácia techniky</small></div>
-      <div class="quote">„Ktorá žena by nechcela vstávať z postele už upravená?"</div>
-    </div>
-    <div class="chip c1"><i>✓</i>Predkreslenie vopred</div>
-    <div class="chip c2"><i>★</i>Metóda Long-Time-Liner®</div>
+  <div class="collage">
+    <div class="big"><img src="../assets/ig/ig-05.jpg" alt="Obočie pred a po" width="640" height="640"></div>
+    <div class="small"><img src="../assets/ig/ig-04.jpg" alt="Pery po pigmentovaní" width="512" height="640"></div>
+    <div class="badge">Metóda Long-Time-Liner®</div>
   </div>
 </div></section>
 
-<div class="strip"><div class="wrap">
-  <span><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Kuzmányho 4, Palisády</span>
-  <span><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Predkreslenie farebnou ceruzkou</span>
-  <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Dopigmentovanie do 3 mesiacov zdarma</span>
-  <span><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg>Prístroj CONTURE MED 2000</span>
-</div></div>
+<div class="strip"><div class="wrap"><span>📍 Kuzmányho 4, Palisády</span><span>✓ Predkreslenie farebnou ceruzkou</span><span>✓ Dopigmentovanie do 3 mesiacov zdarma</span><span>✓ Prístroj CONTURE MED 2000</span></div></div>
 
-<section id="techniky"><div class="wrap">
-  <div class="head rev"><span class="tag">Techniky</span><h2>Vyberte si, čo <span>vám pristane</span></h2><p>Prepnite si časť tváre a pozrite si, ako jednotlivé techniky vyzerajú a čo ponúkajú.</p></div>
-  <div class="explorer rev">
-    <div class="tabs" role="tablist"><button class="on" data-t="brow">Obočie</button><button data-t="eye">Očné linky</button><button data-t="lip">Pery</button></div>
+<section class="about" id="o-nas"><div class="wrap">
+  <div class="shot"><img src="../assets/ig/ig-09.jpg" alt="Kristína Ševčiková, linergistka" width="480" height="640" loading="lazy"></div>
+  <div>
+    <div class="sec-head"><div class="num">02</div><span>O nás</span></div>
+    <h2>Za výsledkom stojí <span>26 rokov praxe</span></h2>
+    <p>Kristína Ševčiková je elite linergistka s 26-ročnou praxou v permanentnom make-upe. Pracuje metódou Long-Time-Liner® Conture® Make-up, ktorá existuje už viac ako 20 rokov.</p>
+    <p>Tisíce žien zistili, že nepohodlné líčenie a odličovanie patrí minulosti. Pred každým zákrokom si spolu vyberiete tvar aj farbu.</p>
+    <div class="kp"><div><b>26</b><span>rokov praxe</span></div><div><b>20+</b><span>rokov metódy</span></div><div><b>70 / s</b><span>vpichov, nitkovo jemne</span></div></div>
+    <p style="margin-top:26px"><a class="btn ghost" href="https://www.instagram.com/sevcikova_conture_make_up/" target="_blank" rel="noopener">@sevcikova_conture_make_up</a></p>
+  </div>
+</div></section>
 
-    <div class="panel on" id="p-brow">
-      <div>
-        <div class="opts"><button class="on" data-o="hair" data-t="Čiarkované" data-d="Jemné chĺpkové ťahy napodobňujú prirodzené vlásky. Najprirodzenejší efekt — skvelé pri riedkom alebo nepravidelne rastúcom obočí." data-p="250">Čiarkované</button><button data-o="powder" data-t="Púdrové" data-d="Mäkké vytieňovanie pripomína jemne vypudrované obočie. Plnší, graficky čistejší výsledok bez viditeľných chĺpkov." data-p="250">Púdrové</button><button data-o="combo" data-t="Kombo" data-d="Čiarkovaný začiatok pre prirodzený vzhľad a vytieňované telo a chvost pre výraznosť. Zlatá stredná cesta." data-p="250">Kombo</button></div>
-        <h3 class="ttl">Čiarkované</h3>
-        <p class="dsc">Jemné chĺpkové ťahy napodobňujú prirodzené vlásky. Najprirodzenejší efekt — skvelé pri riedkom alebo nepravidelne rastúcom obočí.</p>
-        <ul><li>Tvar najprv predkreslíme farebnou ceruzkou</li><li>Domáce farbenie vydrží ~4 týždne, pigmentovanie dlhodobo</li><li>Bezplatné dopigmentovanie do 3 mesiacov</li></ul>
-        <span class="price-tag"><small>cena</small><b class="pp">250 €</b></span><a class="btn" href="tel:+421903687696">Objednať</a>
-      </div>
-      <div class="stage"><svg class="on" data-art="brow-hair" data-ink="#3a2a21" data-seed="31" data-o="hair"></svg><svg data-art="brow-powder" data-ink="#3a2a21" data-seed="32" data-o="powder"></svg><svg data-art="brow-combo" data-ink="#3a2a21" data-seed="33" data-o="combo"></svg><span class="lbl">Ilustrácia techniky</span></div>
-    </div>
+<section class="bgm" id="sluzby"><div class="wrap">
+  <div class="head"><div class="sec-head"><div class="num">03</div><span>Služby</span></div><h2>Čo pre vás <span>urobíme</span></h2><p>Konkrétnu techniku, tvar a farbu vždy vyberieme osobne na konzultácii. Ceny pre pobočku Bratislava.</p></div>
+  <div class="svc">
+    <div class="card"><div class="shot"><img src="../assets/ig/ig-03.jpg" alt="Obočie" loading="lazy" style="object-position:50% 20%"></div><div class="body"><h3>Obočie</h3><p>Ak obočie rastie nepravidelne či riedko, dotvoríme ho natrvalo. Farbenie vydrží ~4 týždne, pigmentovanie dlhodobo.</p><ul class="pl"><li><span>Čiarkované<small>jemné chĺpkové ťahy</small></span><b>250 €</b></li><li><span>Púdrové<small>mäkké vytieňovanie</small></span><b>250 €</b></li><li><span>Kombo<small>čiarkované + vytieňované</small></span><b>250 €</b></li></ul></div></div>
+    <div class="card"><div class="shot"><img src="../assets/ig/ig-05.jpg" alt="Oči a obočie" loading="lazy" style="object-position:50% 45%"></div><div class="body"><h3>Očné linky</h3><p>Pigmentovanie hornej a dolnej linky zvýrazní oči a zahustí líniu rias. Odolné voči rozmazaniu.</p><ul class="pl"><li><span>Jemné</span><b>120 €</b></li><li><span>Dekoratívne</span><b>160 €</b></li><li><span>Spodné jemné</span><b>100 €</b></li></ul></div></div>
+    <div class="card"><div class="shot"><img src="../assets/ig/ig-01.jpg" alt="Pery" loading="lazy"></div><div class="body"><h3>Pery</h3><p>Pery najprv predkreslíme v odtieni, ktorý zodpovedá vášmu typu — od prirodzených tónov po bronzové a hnedé.</p><ul class="pl"><li><span>Plnovytieňované</span><b>350 €</b></li></ul></div></div>
+  </div>
+</div></section>
 
-    <div class="panel" id="p-eye">
-      <div>
-        <div class="opts"><button class="on" data-o="fine" data-t="Jemné" data-d="Diskrétna linka tesne pri koreňoch rias. Oči vyzerajú výraznejšie a riasy hustejšie — bez viditeľného nalíčenia." data-p="120">Jemné</button><button data-o="deco" data-t="Dekoratívne" data-d="Výraznejšia, graficky čistá linka s možnosťou jemne vytiahnutého krídelka. Pre tie, čo milujú výrazný pohľad." data-p="160">Dekoratívne</button><button data-o="lower" data-t="Spodné jemné" data-d="Jemné podčiarknutie dolného viečka, ktoré dokončí rám očí a zjemní pohľad." data-p="100">Spodné jemné</button></div>
-        <h3 class="ttl">Jemné</h3>
-        <p class="dsc">Diskrétna linka tesne pri koreňoch rias. Oči vyzerajú výraznejšie a riasy hustejšie — bez viditeľného nalíčenia.</p>
-        <ul><li>Pigmentovanie hornej aj dolnej linky</li><li>Odolné voči rozmazaniu pri každodenných aktivitách</li><li>Bezplatné dopigmentovanie do 3 mesiacov</li></ul>
-        <span class="price-tag"><small>cena</small><b class="pp">120 €</b></span><a class="btn" href="tel:+421903687696">Objednať</a>
-      </div>
-      <div class="stage"><svg class="on" data-art="eye-fine" data-ink="#1b1410" data-ink2="#3f322a" data-seed="41" data-o="fine"></svg><svg data-art="eye-deco" data-ink="#1b1410" data-ink2="#3f322a" data-seed="42" data-o="deco"></svg><svg data-art="eye-lower" data-ink="#1b1410" data-ink2="#3f322a" data-seed="43" data-o="lower"></svg><span class="lbl">Ilustrácia techniky</span></div>
-    </div>
+<section class="gals" id="ukazky"><div class="wrap">
+  <div class="head"><div class="sec-head"><div class="num">04</div><span>Ukážky prác</span></div><h2>Výsledky, <span>ktoré vidno</span></h2></div>
+  <div class="gal">
+    <figure><img src="../assets/ig/ig-05.jpg" alt="Obočie pred a po" loading="lazy"><figcaption>Obočie</figcaption></figure>
+    <figure><img src="../assets/ig/ig-01.jpg" alt="Pery pred a po" loading="lazy"><figcaption>Pery</figcaption></figure>
+    <figure><img src="../assets/ig/ig-03.jpg" alt="Obočie" loading="lazy"><figcaption>Obočie</figcaption></figure>
+    <figure><img src="../assets/ig/ig-04.jpg" alt="Pery zahojené" loading="lazy"><figcaption>Pery</figcaption></figure>
+    <figure><img src="../assets/ig/ig-06.jpg" alt="Pery pred a po" loading="lazy"><figcaption>Pery</figcaption></figure>
+    <figure><img src="../assets/ig/ig-08.jpg" alt="Pery" loading="lazy"><figcaption>Pery</figcaption></figure>
+  </div>
+  <div class="galcta"><a class="btn" href="https://www.instagram.com/sevcikova_conture_make_up/" target="_blank" rel="noopener">Ďalšie práce na Instagrame</a><span>@sevcikova_conture_make_up</span></div>
+</div></section>
 
-    <div class="panel" id="p-lip">
-      <div>
-        <div class="opts"><button class="on" data-o="rose" data-t="Plnovytieňované" data-d="Farba v celej ploche pier. Pery najprv predkreslíme v odtieni, ktorý zodpovedá vášmu typu, až potom pigmentujeme." data-p="350">Plnovytieňované</button><button data-o="nude" data-t="Prirodzený tón" data-d="Jemný odtieň blízky vašej pleti — pery sú upravené a výrazné, no stále vyzerajú prirodzene." data-p="350">Prirodzený tón</button><button data-o="bronze" data-t="Bronz / hnedá" data-d="Módne bronzové a hnedé tóny pre moderný, sýty vzhľad." data-p="350">Bronz / hnedá</button></div>
-        <h3 class="ttl">Plnovytieňované</h3>
-        <p class="dsc">Farba v celej ploche pier. Pery najprv predkreslíme v odtieni, ktorý zodpovedá vášmu typu, až potom pigmentujeme.</p>
-        <ul><li>Od prirodzených tónov po módne bronzové a hnedé</li><li>Tvar a farbu schvaľujete pred zákrokom</li><li>Bezplatné dopigmentovanie do 3 mesiacov</li></ul>
-        <span class="price-tag"><small>cena</small><b class="pp">350 €</b></span><a class="btn" href="tel:+421903687696">Objednať</a>
-      </div>
-      <div class="stage lipst"><svg class="on" data-art="lips" data-ink="#c47a79" data-ink2="#a85a60" data-seed="51" data-o="rose"></svg><svg data-art="lips" data-ink="#b8907b" data-ink2="#946a57" data-seed="52" data-o="nude"></svg><svg data-art="lips" data-ink="#a2694f" data-ink2="#7c4a37" data-seed="53" data-o="bronze"></svg><span class="lbl">Ilustrácia techniky</span></div>
+<section class="bgw" id="postup"><div class="wrap">
+  <div class="head"><div class="sec-head"><div class="num">05</div><span>Postup</span></div><h2>Ako to <span>prebieha</span></h2></div>
+  <div class="steps">
+    <div class="step"><em>1</em><h4>Konzultácia</h4><p>Spoločne zvolíme techniku, tvar a farebný tón vhodný pre váš typ.</p></div>
+    <div class="step"><em>2</em><h4>Predkreslenie</h4><p>Návrh nakreslíme špeciálnou farebnou ceruzkou. Môžete ho upraviť.</p></div>
+    <div class="step"><em>3</em><h4>Pigmentovanie</h4><p>Pero Conture MED 2000 vnáša farbu jemne a presne.</p></div>
+    <div class="step"><em>4</em><h4>Dopigmentovanie</h4><p>Ak je výsledok príliš jemný, doladíme ho bezplatne do 3 mesiacov.</p></div>
+  </div>
+  <div class="cmp">
+    <div class="a"><h3>Farbenie obočia</h3><div class="big">~4 týždne</div><ul><li>Treba opakovať</li><li>Tvar si kreslíte sami</li><li>Riedke miesta ostávajú</li></ul></div>
+    <div class="b"><h3>Pigmentovanie Conture®</h3><div class="big">Dlhodobo</div><ul><li>Tvar navrhnutý presne pre vás</li><li>Vopred schválené predkreslenie</li><li>Riedke miesta dotvorené</li></ul></div>
+  </div>
+</div></section>
+
+<section id="pristroj"><div class="wrap">
+  <div class="dev">
+    <div class="ph"><img src="../assets/pristroj.jpg" alt="Prístroj Conture MED 2000" width="300" height="213"></div>
+    <div>
+      <div class="sec-head"><div class="num">06</div><span>Prístroj</span></div>
+      <h2>Nitkovo jemné <span>pigmentovanie</span></h2>
+      <p>Pigmentovacie pero Conture vnáša pigmentovú farbu do hornej časti pokožky rýchlosťou 70 vpichov za sekundu. Pracujeme s prístrojom CONTURE MED 2000 systému Long-Time-Liner®.</p>
+      <div class="kp" style="margin-top:0"><div><b>70</b><span>vpichov za sekundu</span></div><div><b>20+</b><span>rokov metódy</span></div><div><b>MED 2000</b><span>prístroj</span></div></div>
     </div>
   </div>
 </div></section>
 
-<section class="calc" id="kalkulacka"><div class="wrap">
-  <div class="head rev"><span class="tag">Cenník</span><h2>Zostavte si <span>ošetrenie</span></h2><p>Označte, čo vás zaujíma — cenu vidíte hneď. Ceny platia pre pobočku Bratislava.</p></div>
+<section class="calc bgm" id="cennik"><div class="wrap">
+  <div class="head"><div class="sec-head"><div class="num">07</div><span>Cenník</span></div><h2>Zostavte si <span>ošetrenie</span></h2><p>Označte, čo vás zaujíma — cenu vidíte hneď. Ceny platia pre pobočku Bratislava.</p></div>
   <div class="grid">
-    <div class="items rev" id="items">
+    <div class="items" id="items">
       <div class="grp">Obočie</div>
-      <label class="it" data-n="Obočie čiarkované" data-p="250"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Čiarkované<small>jemné chĺpkové ťahy</small></span><span class="p">250 €</span></label>
-      <label class="it" data-n="Obočie púdrové" data-p="250"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Púdrové<small>mäkké vytieňovanie</small></span><span class="p">250 €</span></label>
-      <label class="it" data-n="Obočie kombo" data-p="250"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Kombo<small>čiarkované + vytieňované</small></span><span class="p">250 €</span></label>
+      <label class="it" data-n="Obočie čiarkované" data-p="250"><input type="checkbox"><span class="box"></span><span class="n">Čiarkované<small>jemné chĺpkové ťahy</small></span><span class="p">250 €</span></label>
+      <label class="it" data-n="Obočie púdrové" data-p="250"><input type="checkbox"><span class="box"></span><span class="n">Púdrové<small>mäkké vytieňovanie</small></span><span class="p">250 €</span></label>
+      <label class="it" data-n="Obočie kombo" data-p="250"><input type="checkbox"><span class="box"></span><span class="n">Kombo<small>čiarkované + vytieňované</small></span><span class="p">250 €</span></label>
       <div class="grp">Očné linky</div>
-      <label class="it" data-n="Linky jemné" data-p="120"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Jemné</span><span class="p">120 €</span></label>
-      <label class="it" data-n="Linky dekoratívne" data-p="160"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Dekoratívne</span><span class="p">160 €</span></label>
-      <label class="it" data-n="Linky spodné jemné" data-p="100"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Spodné jemné</span><span class="p">100 €</span></label>
+      <label class="it" data-n="Linky jemné" data-p="120"><input type="checkbox"><span class="box"></span><span class="n">Jemné</span><span class="p">120 €</span></label>
+      <label class="it" data-n="Linky dekoratívne" data-p="160"><input type="checkbox"><span class="box"></span><span class="n">Dekoratívne</span><span class="p">160 €</span></label>
+      <label class="it" data-n="Linky spodné jemné" data-p="100"><input type="checkbox"><span class="box"></span><span class="n">Spodné jemné</span><span class="p">100 €</span></label>
       <div class="grp">Pery</div>
-      <label class="it" data-n="Pery plnovytieňované" data-p="350"><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span class="n">Plnovytieňované</span><span class="p">350 €</span></label>
+      <label class="it" data-n="Pery plnovytieňované" data-p="350"><input type="checkbox"><span class="box"></span><span class="n">Plnovytieňované</span><span class="p">350 €</span></label>
     </div>
-    <aside class="sum rev">
+    <aside class="sum">
       <h3>Orientačná cena</h3>
       <div class="tot"><span id="tot">0</span><small> €</small></div>
       <ul id="lst"><li class="empty">Zatiaľ nič nevybrané</li></ul>
-      <a class="btn coral" id="cta" href="tel:+421903687696">Zavolať a objednať</a>
+      <a class="btn coral" href="tel:+421903687696">Zavolať a objednať</a>
       <p>Posledná aktualizácia cenníka: 19. 11. 2024. Zmena cien vyhradená. Konečnú cenu potvrdíme pri konzultácii.</p>
     </aside>
   </div>
 </div></section>
 
-<section id="postup"><div class="wrap">
-  <div class="head rev"><span class="tag">Postup</span><h2>Ako to <span>prebieha</span></h2></div>
-  <div class="steps">
-    <div class="step rev"><em>1</em><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 01-12.5 7.3L3 20l1.3-5A8.4 8.4 0 1121 11.5z"/></svg></div><h4>Konzultácia</h4><p>Spoločne zvolíme techniku, tvar a farebný tón vhodný pre váš typ.</p></div>
-    <div class="step rev"><em>2</em><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></div><h4>Predkreslenie</h4><p>Návrh nakreslíme špeciálnou farebnou ceruzkou. Môžete ho upraviť.</p></div>
-    <div class="step rev"><em>3</em><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><h4>Pigmentovanie</h4><p>Pero Conture MED 2000 vnáša farbu jemne a presne.</p></div>
-    <div class="step rev"><em>4</em><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div><h4>Dopigmentovanie</h4><p>Ak je výsledok príliš jemný, doladíme ho bezplatne do 3 mesiacov.</p></div>
-  </div>
-</div></section>
-
-<section style="padding-top:0"><div class="wrap">
-  <div class="cmp">
-    <div class="a rev"><h3>Farbenie obočia</h3><div class="big">~4 týždne</div><ul><li>Treba opakovať</li><li>Tvar si kreslíte sami</li><li>Riedke miesta ostávajú</li></ul></div>
-    <div class="b rev"><h3>Pigmentovanie Conture®</h3><div class="big">Dlhodobo</div><ul><li>Tvar navrhnutý presne pre vás</li><li>Vopred schválené predkreslenie</li><li>Riedke miesta dotvorené</li></ul></div>
-  </div>
-</div></section>
-
-<section style="padding-top:0"><div class="wrap">
-  <div class="dev rev">
-    <div class="ph"><img src="../assets/pristroj.jpg" alt="Prístroj Conture MED 2000" width="300" height="213"></div>
-    <div>
-      <span class="tag">Prístroj</span>
-      <h2>Nitkovo jemné <span>pigmentovanie</span></h2>
-      <p>Pigmentovacie pero Conture vnáša pigmentovú farbu do hornej časti pokožky rýchlosťou 70 vpichov za sekundu. Pracujeme s prístrojom CONTURE MED 2000 systému Long-Time-Liner®.</p>
-      <div class="kpis"><div><b>70</b><span>vpichov za sekundu</span></div><div><b>20+</b><span>rokov metódy</span></div><div><b>MED 2000</b><span>prístroj</span></div></div>
-    </div>
-  </div>
-</div></section>
-
-<section style="padding-top:0"><div class="wrap">
-  <div class="guar rev">
+<section id="zaruka"><div class="wrap">
+  <div class="guar">
     <div class="big3"><div>3<small>mesiace</small></div></div>
-    <div><h2>Záruka spokojnosti</h2><p>Ak sa vám po prvom ošetrení bude Conture® make-up zdať príliš jemný alebo nevýrazný, dopigmentujeme ho bezplatne do troch mesiacov.</p></div>
+    <div><div class="sec-head" style="margin-bottom:8px"><div class="num" style="background:#fff;color:var(--teal-d)">08</div><span style="color:#d4f1ee">Záruka</span></div><h2>Záruka spokojnosti</h2><p>Ak sa vám po prvom ošetrení bude Conture® make-up zdať príliš jemný alebo nevýrazný, dopigmentujeme ho bezplatne do troch mesiacov.</p></div>
     <a class="btn" href="tel:+421903687696">Objednať sa</a>
   </div>
 </div></section>
 
-<section class="faq" id="otazky" style="padding-top:0"><div class="wrap">
-  <div class="head rev"><span class="tag">Otázky</span><h2>Čo sa <span>pýtate</span></h2></div>
-  <div class="rev">
+<section id="skolenia" style="padding-top:0"><div class="wrap">
+  <div class="acad"><div><div class="sec-head" style="margin-bottom:10px"><div class="num" style="background:var(--coral)">09</div><span style="color:#a6c4c2">Školenia</span></div><h3>Ste profesionálka?</h3><p>Zastúpenie značky Conture Make-Up na Slovensku zabezpečujeme na základe osvedčení a certifikátov, ktoré sú v spojení s dlhoročnou praxou zárukou spokojnosti klientok.</p></div><a class="btn coral" href="mailto:info@conturemakeup.sk?subject=Školenia%20Conture">Napísať k školeniam</a></div>
+</div></section>
+
+<section class="faq bgw" id="otazky"><div class="wrap">
+  <div class="head"><div class="sec-head"><div class="num">10</div><span>Otázky</span></div><h2>Čo sa <span>pýtate</span></h2></div>
+  <div>
     <details><summary>Čím sa líši pigmentovanie od farbenia obočia?</summary><p>Farbenie vydrží približne štyri týždne. Pigmentovanie metódou Conture® je dlhodobé a tvar je presne navrhnutý na mieru vašej tváre.</p></details>
     <details><summary>Uvidím tvar ešte pred zákrokom?</summary><p>Áno. Tvar a farbu najprv predkreslíme špeciálnou farebnou ceruzkou. Pigmentujeme až po vašom schválení.</p></details>
     <details><summary>Čo ak bude výsledok príliš nenápadný?</summary><p>Do troch mesiacov si ho môžete nechať bezplatne dopigmentovať.</p></details>
     <details><summary>Ako sa objednám?</summary><p>Zavolajte na 0903 687 696 alebo napíšte na info@conturemakeup.sk.</p></details>
-    <details><summary>Robíte aj školenia?</summary><p>Zastúpenie značky Conture Make-Up na Slovensku zabezpečujeme na základe osvedčení a certifikátov. Ak vás zaujímajú školenia, napíšte nám.</p></details>
+    <details><summary>Robíte aj školenia?</summary><p>Zastúpenie značky Conture Make-Up na Slovensku zabezpečujeme na základe osvedčení a certifikátov. Ak vás školenia zaujímajú, napíšte nám.</p></details>
   </div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
-  <div class="acad rev"><div><h3>Ste profesionálka?</h3><p>Školenia Conture® — zastúpenie značky na Slovensku na základe osvedčení a certifikátov.</p></div><a class="btn coral" href="mailto:info@conturemakeup.sk?subject=Školenia%20Conture">Napísať k školeniam</a></div>
-</div></section>
-
-<section class="contact" id="kontakt" style="padding-top:0"><div class="wrap">
-  <div class="head rev"><span class="tag">Kontakt</span><h2>Kde nás <span>nájdete</span></h2></div>
+<section class="contact" id="kontakt"><div class="wrap">
+  <div class="head"><div class="sec-head"><div class="num">11</div><span>Kontakt</span></div><h2>Kde nás <span>nájdete</span></h2></div>
   <div class="grid">
-    <div class="card rev"><h3>Conture Make-Up Bratislava</h3>
-      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><small>Adresa</small><b>Kuzmányho 4, Bratislava – Palisády</b></div></div>
-      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div><div><small>Telefón</small><a href="tel:+421903687696">0903 687 696</a></div></div>
-      <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><small>E-mail</small><a href="mailto:info@conturemakeup.sk">info@conturemakeup.sk</a></div></div>
-      <a class="btn" href="tel:+421903687696" style="margin-top:10px">Zavolať teraz</a>
+    <div class="cbox"><h3>Conture Make-Up Bratislava</h3>
+      <div class="row"><small>Adresa</small><b>Kuzmányho 4, Bratislava – Palisády</b></div>
+      <div class="row"><small>Telefón</small><a href="tel:+421903687696">0903 687 696</a></div>
+      <div class="row"><small>E-mail</small><a href="mailto:info@conturemakeup.sk">info@conturemakeup.sk</a></div>
+      <div class="row"><small>Instagram</small><a href="https://www.instagram.com/sevcikova_conture_make_up/" target="_blank" rel="noopener">@sevcikova_conture_make_up</a></div>
+      <a class="btn" href="tel:+421903687696">Zavolať teraz</a>
     </div>
-    <div class="card mapc rev"><iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kuzm%C3%A1nyho+4,+Bratislava&output=embed"></iframe></div>
+    <div class="cbox mapc"><iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kuzm%C3%A1nyho+4,+Bratislava&output=embed"></iframe></div>
   </div>
 </div></section>
 </main>
 <footer>© Conture Make-Up Bratislava · Kuzmányho 4</footer>
 <a class="btn coral sticky" href="tel:+421903687696">Objednať sa · 0903 687 696</a>
 
-<script src="../assets/art.js"></script>
 <script>
 (function(){
   var b=document.body;
   document.getElementById('bg').onclick=function(){b.classList.toggle('menu-open')};
   document.querySelectorAll('#nav a').forEach(function(a){a.onclick=function(){b.classList.remove('menu-open')}});
-  var els=document.querySelectorAll('.rev');
-  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});els.forEach(function(e){io.observe(e)})}else els.forEach(function(e){e.classList.add('in')});
-
-  /* tabs */
-  var tabs=document.querySelectorAll('.tabs button');
-  tabs.forEach(function(t){t.onclick=function(){tabs.forEach(function(x){x.classList.remove('on')});t.classList.add('on');document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});var p=document.getElementById('p-'+t.dataset.t);p.classList.add('on');p.querySelectorAll('svg').forEach(function(s){s.classList.add('go')})}});
-  /* options */
-  document.querySelectorAll('.panel').forEach(function(p){
-    var btns=p.querySelectorAll('.opts button'),svgs=p.querySelectorAll('.stage svg');
-    btns.forEach(function(bt){bt.onclick=function(){btns.forEach(function(x){x.classList.remove('on')});bt.classList.add('on');
-      p.querySelector('.ttl').textContent=bt.dataset.t;p.querySelector('.dsc').textContent=bt.dataset.d;p.querySelector('.pp').textContent=bt.dataset.p+' €';
-      svgs.forEach(function(s){s.classList.toggle('on',s.dataset.o===bt.dataset.o);if(s.dataset.o===bt.dataset.o){s.classList.remove('go');void s.getBoundingClientRect();s.classList.add('go')}})}});
-  });
-  /* calculator */
-  var its=document.querySelectorAll('.it'),tot=document.getElementById('tot'),lst=document.getElementById('lst'),cta=document.getElementById('cta');
-  function calc(){var s=0,h='';its.forEach(function(i){if(i.classList.contains('on')){s+=+i.dataset.p;h+='<li><span>'+i.dataset.n+'</span><b>'+i.dataset.p+' €</b></li>'}});
+  var its=document.querySelectorAll('.it'),tot=document.getElementById('tot'),lst=document.getElementById('lst');
+  function calc(){var s=0,h='';its.forEach(function(i){var on=i.classList.contains('on');i.querySelector('.box').textContent=on?'✓':'';if(on){s+=+i.dataset.p;h+='<li><span>'+i.dataset.n+'</span><b>'+i.dataset.p+' €</b></li>'}});
     tot.textContent=s;lst.innerHTML=h||'<li class="empty">Zatiaľ nič nevybrané</li>'}
   its.forEach(function(i){i.addEventListener('click',function(e){e.preventDefault();i.classList.toggle('on');calc()})});
 })();

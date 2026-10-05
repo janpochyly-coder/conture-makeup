@@ -5,35 +5,84 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Conture Make-Up — návrhy webu</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font:400 16px/1.6 Inter,sans-serif;background:#eceae6;color:#1a1a1a;padding:60px 5vw}
+body{font:400 16px/1.6 Inter,system-ui,sans-serif;background:#eceae6;color:#1a1a1a;padding:60px 5vw 80px}
+.top{max-width:1240px;margin:0 auto 44px}
 h1{font-size:clamp(28px,4vw,44px);letter-spacing:-.02em}
-.sub{color:#666;margin:8px 0 44px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;max-width:1200px}
-a.c{background:#fff;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:.25s;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-a.c:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.14)}
-.pv{height:230px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:22px}
-.pv span{position:relative;line-height:.95}
-.p1{background:#f6f1ea;color:#1c1917}.p1 span{font:300 54px 'Cormorant Garamond',Georgia,serif}.p1 span i{color:#a8825a}
-.p2{background:linear-gradient(160deg,#0f8f8a,#2bb5ad);color:#fff}.p2 span{font:800 38px Inter;letter-spacing:-.03em;line-height:1.05}
-.p3{background:radial-gradient(ellipse at 50% 30%,#18234a,#0b1228 70%);color:#f1e9d8}.p3 span{font:400 40px 'Playfair Display',Georgia,serif;z-index:1}.p3 span b{color:#c9a45c;font-style:italic;font-weight:400}
-.p3::before{content:"";position:absolute;inset:12px;border:1px solid #8f7035}.p3::after{content:"";position:absolute;inset:18px;border:1px solid rgba(201,164,92,.4)}
-.tx{padding:22px 24px 26px}
+.sub{color:#666;margin-top:8px;max-width:680px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;max-width:1240px;margin:0 auto}
+.c{background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.pv{height:260px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:24px;text-decoration:none}
+.pv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.pv::after{content:"";position:absolute;inset:0}
+.pv span{position:relative;z-index:1;line-height:.95}
+.p1{background:#f6f1ea;color:#1c1917}.p1::after{background:linear-gradient(to top,rgba(246,241,234,.96) 18%,rgba(246,241,234,0) 70%)}
+.p1 span{font:300 50px 'Cormorant Garamond',Georgia,serif}.p1 span i{color:#a8825a}
+.p2{background:#0f8f8a;color:#fff}.p2::after{background:linear-gradient(to top,rgba(10,102,99,.92) 12%,rgba(15,143,138,0) 75%)}
+.p2 span{font:800 34px/1.05 Inter;letter-spacing:-.03em}
+.p3{background:#0b1228;color:#f1e9d8}.p3::after{background:linear-gradient(to top,rgba(11,18,40,.96) 14%,rgba(11,18,40,0) 75%);box-shadow:inset 0 0 0 10px #0b1228,inset 0 0 0 11px #8f7035}
+.p3 span{font:400 38px 'Playfair Display',Georgia,serif;padding-left:8px}.p3 span i{color:#c9a45c}
+.tx{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
 .tx small{color:#999;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:11px}
-.tx h2{font-size:22px;margin:4px 0 8px}
-.tx p{color:#666;font-size:14.5px}
-.tx em{display:inline-block;margin-top:14px;font-style:normal;font-weight:600;font-size:14px}
+.tx h2{font-size:24px;margin:4px 0 8px}
+.tx p{color:#555;font-size:15px}
+.tx h3{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin:18px 0 8px}
+.tx ul{list-style:none;columns:2;column-gap:18px;font-size:14px;color:#333}
+.tx li{padding:2px 0;break-inside:avoid}
+.tx li b{display:inline-block;width:2.2em;color:#999;font-weight:600}
+.tx a.go{margin-top:auto;padding-top:20px;display:block;font-weight:600;font-size:14px;color:inherit;text-decoration:none}
+.tx a.go span{display:inline-block;margin-top:0;border-bottom:2px solid #1a1a1a;padding-bottom:2px}
+.note{max-width:1240px;margin:36px auto 0;color:#777;font-size:13.5px}
 </style>
 </head>
 <body>
-<h1>Conture Make-Up Bratislava</h1>
-<p class="sub">Tri odlišné návrhy webu · permanentný make-up · Kuzmányho 4, Palisády</p>
-<div class="grid">
-  <a class="c" href="navrh-1/"><div class="pv p1"><span>Vstať<br><i>upravená.</i></span></div><div class="tx"><small>Návrh 1</small><h2>Atelier</h2><p>Editoriálny luxus. Krémový „atlas techník" s ilustráciami obočia, očí a pier ako figúrami v magazíne, zlaté akcenty a pokojná serifová typografia.</p><em>Otvoriť →</em></div></a>
-  <a class="c" href="navrh-2/"><div class="pv p2"><span>Obočie, linky<br>a pery, ktoré<br>vždy sedia.</span></div><div class="tx"><small>Návrh 2</small><h2>Fresh Clinic</h2><p>Svetlý a moderný. Interaktívny výber techník, kalkulačka ceny ošetrenia, porovnanie s farbením a lepivé tlačidlo na mobile.</p><em>Otvoriť →</em></div></a>
-  <a class="c" href="navrh-3/"><div class="pv p3"><span>Krása v<br><b>každom<br>detaile.</b></span></div><div class="tx"><small>Návrh 3</small><h2>Royal</h2><p>Kráľovsky bohatý. Nočná modrá a zlato, ozdobné dvojité rámy, obloukové kamey s ilustráciami techník, pečať záruky a ceremoniálny cenník.</p><em>Otvoriť →</em></div></a>
+<div class="top">
+  <h1>Conture Make-Up Bratislava</h1>
+  <p class="sub">Tri návrhy webu · permanentný make-up · Kuzmányho 4, Palisády. Všetky majú rovnaký obsah a rovnaké sekcie, líšia sa štýlom a rozložením.</p>
 </div>
+
+<div class="grid">
+  <article class="c">
+    <a class="pv p1" href="navrh-1/"><img src="assets/ig/ig-05.jpg" alt=""><span>Vstať<br><i>upravená.</i></span></a>
+    <div class="tx">
+      <small>Návrh 1</small><h2>Atelier</h2>
+      <p>Redakčný, luxusný štýl. Krémové pozadie, tmavý text, zlatohnedé akcenty a elegantné serifové písmo s veľkým množstvom vzduchu. Fotky sú v „papierových" rámoch ako v módnom magazíne, sekcie sú očíslované a oddelené tenkými linkami.</p>
+      <h3>Sekcie</h3>
+      <ul>
+        <li><b>01</b>Úvod</li><li><b>02</b>O nás</li><li><b>03</b>Služby</li><li><b>04</b>Ukážky prác</li><li><b>05</b>Postup</li><li><b>06</b>Prístroj</li><li><b>07</b>Cenník</li><li><b>08</b>Záruka</li><li><b>09</b>Školenia</li><li><b>10</b>Otázky</li><li><b>11</b>Kontakt</li>
+      </ul>
+      <a class="go" href="navrh-1/"><span>Otvoriť návrh →</span></a>
+    </div>
+  </article>
+
+  <article class="c">
+    <a class="pv p2" href="navrh-2/"><img src="assets/ig/ig-04.jpg" alt=""><span>Obočie, linky<br>a pery, ktoré<br>vždy sedia.</span></a>
+    <div class="tx">
+      <small>Návrh 2</small><h2>Fresh Clinic</h2>
+      <p>Svetlý, moderný, priateľský. Tyrkysová z loga na teplom podklade, zaoblené karty, výrazné tlačidlá a jasné číslované sekcie. Dôraz na prehľadnosť a rýchlu objednávku: kalkulačka ceny, porovnanie s farbením a lepivé tlačidlo na mobile.</p>
+      <h3>Sekcie</h3>
+      <ul>
+        <li><b>01</b>Úvod</li><li><b>02</b>O nás</li><li><b>03</b>Služby</li><li><b>04</b>Ukážky prác</li><li><b>05</b>Postup</li><li><b>06</b>Prístroj</li><li><b>07</b>Cenník (kalkulačka)</li><li><b>08</b>Záruka</li><li><b>09</b>Školenia</li><li><b>10</b>Otázky</li><li><b>11</b>Kontakt</li>
+      </ul>
+      <a class="go" href="navrh-2/"><span>Otvoriť návrh →</span></a>
+    </div>
+  </article>
+
+  <article class="c">
+    <a class="pv p3" href="navrh-3/"><img src="assets/ig/ig-06.jpg" alt=""><span>Krása v<br><i>každom detaile.</i></span></a>
+    <div class="tx">
+      <small>Návrh 3</small><h2>Royal</h2>
+      <p>Kráľovský, bohatý a slávnostný. Nočná modrá so zlatom, ozdobné dvojité rámy s rohmi, fotky v zlatých rámoch a oblúku, klasické písmo Playfair a Cinzel. Sekcie majú rímske číslice a ceremoniálny cenník ako „menu".</p>
+      <h3>Sekcie</h3>
+      <ul>
+        <li><b>I</b>Úvod</li><li><b>II</b>O nás</li><li><b>III</b>Služby</li><li><b>IV</b>Ukážky prác</li><li><b>V</b>Postup</li><li><b>VI</b>Prístroj</li><li><b>VII</b>Cenník</li><li><b>VIII</b>Záruka</li><li><b>IX</b>Školenia</li><li><b>X</b>Otázky</li><li><b>XI</b>Kontakt</li>
+      </ul>
+      <a class="go" href="navrh-3/"><span>Otvoriť návrh →</span></a>
+    </div>
+  </article>
+</div>
+<p class="note">Fotografie sú z Instagramu @sevcikova_conture_make_up. Ceny a údaje sú z conturemakeup.sk (pobočka Bratislava).</p>
 </body>
 </html>
